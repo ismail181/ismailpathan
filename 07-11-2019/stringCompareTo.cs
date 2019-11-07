@@ -1,3 +1,5 @@
+//compareTo() returns int value i.e, difference b/w their characters
+
 using System;    
     public class StringCompareTo   
     {    

@@ -1,3 +1,4 @@
+//it returns int value i.e, difference b/w no of characters
 using System;    
     public class StringCompare   
     {    
