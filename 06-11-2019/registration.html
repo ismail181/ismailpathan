@@ -1,0 +1,72 @@
+
+ <body>
+   <h2 style="text-align:center"> REGISTRATION FORM </h2>
+  <form action="test7.html">
+  <p>
+	 First Name<sup>*</sup>  : <input type="text" name="param1" /> <br/>
+	 Last Name<sup>*</sup>   : <input type="text" name="param2"/><br/>
+	 DOB<sup>*</sup>            : <input type="date" name="param3" max="2019-10-30"/><br/>
+	 Gender<sup>*</sup>       :  <input  type="radio" name="param6">Male</input>
+	                                                     <input  type="radio" name="param6">female</input>
+	                                                    <input  type="radio" name="param6">others</input>                         
+							                                  <br/>
+  Mobile no.<sup>*</sup>      :  <input type="text" name="param4" /><br/>
+  Alternate  Mobile no.<sup>*</sup>      :  <input type="text" name="param" /><br/>
+  Email-Id <sup>*</sup>        :  <input type="email" name="param5" /><br/>
+  Address        : <textarea name="address" rows="4" cols="15"></textarea><br/>
+ Select a file: <input type="file" name="myFile"><br/>
+
+<input type="submit" value="submit" onclick="return validate()"/><br/>
+</p>
+</form >
+<script>
+ function validate()
+   {
+	   var f1 = document.forms[0];
+	    var p1 =f1 .param1;        
+	      if (p1.value.length ==0)
+	      {
+			  alert("please enter first name");
+             p1.focus();
+			  return false;
+	      }   
+		   var p2 = f1.param2;
+	      if (p2.value.length ==0)
+	      {
+			  alert("please enter last name");
+             p2.focus();
+			  return false;
+	      }   
+		   var p3 =f1 .param3;        
+	      if (p3.value.length ==0)
+	      {
+			  alert("please enter DOB");
+              p3.focus();
+			  return false;
+	      }   
+		   var p4 = f1.param4;
+	      if (p4.value.length==0 || p4.value.length<10 || p4.value.length>10)
+	      {
+			  alert("please enter valid mobile number");
+             p4.focus();
+			  return false;
+	      }   
+		    var p5 = f1.param5;
+	      if (p5.value.length ==0 ) 
+	      {
+			  alert("please enter valid email-id");
+             p5.focus();
+			  return false;
+	      }   
+		  var p6 = f1.param6;
+	      if (p6.value.length ==0 ) 
+	      {
+			  alert("please enter gender");
+             p6.focus();
+			  return false;
+	      }   
+		  return true;
+	}
+</script>
+ </body>
+

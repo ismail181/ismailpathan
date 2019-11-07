@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<script>
+class A  
+  {  
+     test()  
+    {  
+      document.writeln("from A <br>");  
+    }  
+  }  
+class B extends A  
+  {  
+    test()  
+    {  
+      document.writeln("from B");  
+    }  
+  }  
+  
+var a=[new A(), new B()];  
+a.forEach(function(msg)  {  
+      msg.test();  
+});  
+</script>
+</html>

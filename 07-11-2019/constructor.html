@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<script>
+class Student
+{
+	 Constructor(){
+	  this.fullName = "ismail Pathan";
+	  }
+}
+ 
+class School extends Student
+{
+	  constructor(id,name) {  
+   super();  
+    this.id=id;  
+    this.name=name;  
+  }   
+}
+	 var std = new School(101, "pathan");
+	 document.writeln(std.id +" "+ std.name+" "+ std.fullName);
+</script>
+</html>

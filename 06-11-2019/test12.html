@@ -1,0 +1,62 @@
+<form action="success.html">
+	Skills : 
+	<input type="checkbox" name="skill" value="c" onclick="checkRemaining()"/> C &nbsp; &nbsp; &nbsp;
+	<input type="checkbox" name="skill" value="cpp" onclick="checkRemaining()"/> C++ &nbsp; &nbsp; &nbsp;
+	<input type="checkbox" name="skill" value="j" onclick="checkRemaining()"/> Java &nbsp; &nbsp; &nbsp;
+	<input type="checkbox" name="skill" value="orcl" onclick="checkRemaining()"/> Oracle<br/>
+	<input type="checkbox" name="allSkillSelect" onclick="selectAllSkills()"/> Select All <br/>
+	<input type="submit" value="submit" onclick="return validate()"/>
+</form>
+<script>
+	function validate()
+	{
+		var f1 = document.forms[0];
+		var skill = f1.skill;  //let
+		var flag = false;
+		for(var i = 0; i < skill.length; i++)
+		{
+			if(skill[i].checked)
+			{
+				flag = true;
+				break;
+			}
+		}
+		if(!flag)
+		{
+			alert("Please select skills");
+			skill[0].focus();
+			return false;
+		}
+		return true;
+	}
+	function selectAllSkills()
+	{
+		var f1 = document.forms[0];
+		var skill = f1.skill;  
+		var allSkills = f1.allSkillSelect;
+		var flag = allSkills.checked;
+		for(var i = 0; i < skill.length; i++)
+		{
+			skill[i].checked = flag;
+		}
+	}
+	function checkRemaining()
+	{
+		var f1 = document.forms[0];
+		var skill = f1.skill;  
+		var allSkills = f1.allSkillSelect;
+		var flag = true;
+		for(var i = 0; i < skill.length; i++)
+		{
+			if(!skill[i].checked)
+			{
+				flag = false;
+				break;
+			}
+		}
+		allSkills.checked = flag;
+	}
+</script>
+
+
+

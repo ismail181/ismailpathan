@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<script>
+function Institute(company)  
+{  
+    this.company=company;   
+}  
+  
+Institute.prototype.getCompany=function()  
+{  
+  return this.company;  
+}  
+
+function Coaching(name,price) {  
+ this.name=name;  
+  this.price=price;  
+  }   
+var std = new Institute("lara");  
+Coaching.prototype=std; //Now Institute treats as a parent of Coaching.  
+var cah=new Coaching("java",10000);  
+document.writeln(cah.getCompany()+" "+cah.name+" "+cah.price);  
+</script>  
+</html>

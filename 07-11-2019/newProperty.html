@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en">
+<script>
+ function Student(firstName, lastName)
+ {
+	 this.firstName =  firstName;
+	 this.lastName =  lastName;
+ }
+	 Student.prototype.fullName = function()
+	 {
+		 return this.firstName +" "+ this.lastName;
+		 }
+	 var std = new Student("ismail", "pathan");
+	 document.writeln(std.fullName());
+</script>
+</html>
