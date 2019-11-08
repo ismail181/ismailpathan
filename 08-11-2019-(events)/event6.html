@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<input type="text" id="1" oncopy="myFunction()" onpaste="myPaste()"></input><br/>
+<p>To see the result then select the content and press Cntrl + C and Cntrl + V  </p>
+<script>
+function myFunction() {
+	if (document.getElementById("1").value.length ==0)
+	{
+		alert("please fill the text");
+	}
+	else
+        alert("You copied text!");
+}
+function myPaste()
+{
+	alert("your text is pasted");
+	}
+</script>
+
+</body>
+</html>

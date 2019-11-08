@@ -1,0 +1,9 @@
+when you are switching to another website or folder or leaving the present site / folder.
+Getting an alert....
+<br/><a href="https://www.w3schools.com">Click here to go to w3schools.com</a>
+
+<script>
+window.addEventListener("beforeunload", function(event) {
+  event.returnValue = "Write something clever here..";
+});
+</script>

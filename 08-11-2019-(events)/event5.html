@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<input type="text" id="1" oncopy="myFunction()"></input><br/>
+To see the result then select the content and press <b>Cntrl + C</b>
+<script>
+function myFunction() {
+	if (document.getElementById("1").value.length ==0)
+	{
+		alert("please fill the text");
+	}
+	else
+        alert("You copied text!");
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,15 @@
+
+<!doctype html>
+<html lang="en">
+ <p>  This is html document </p>
+ <p>try to print by using <b>Cntrl + P</b>  </p>
+ <p>after printing this doc you will get an alert</p>
+
+ <script>
+window.addEventListener("afterprint", myFunction);
+
+function myFunction() {
+  alert("This document is now being printed");
+}
+</script>
+</html>

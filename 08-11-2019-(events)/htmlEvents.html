@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<h1>Input Password name Property</h1>
+
+<form id="1">
+Password: <input type="password" id="PASS" name="passW"   maxLength="10">
+
+<p>Change the name of the password field by clicking the below button</p>
+<input  type="button" onclick="changeName()">CHANGE NAME</input><br/>
+<input  type="button" onclick="formId()">Get formId</input> <br/>
+<input  type="button" onclick="document.getElementById('demo').innerHTML=Date()">The time is?</input> <br/>
+<p id="Sample"></p><br/>
+<p id="Sample1"></p><br/>
+<p id="demo"></p>
+<input  type="submit" value="submit" onclick="return validate()"></input>
+
+</form>
+<script>
+function validate()
+{
+           if(document.getElementById("PASS").value.length==0)
+		   {
+			   return false;
+			   }
+	}
+   function changeName() {
+      document.getElementById("PASS").name ="NEW_PASS" ;
+      document.getElementById("Sample").innerHTML = "Password field name is now NEW_PASS";
+   }
+   function formId() {
+      var P=document.getElementById("PASS").form.id;
+      document.getElementById("Sample1").innerHTML = "The id of the form containing the password field is: "+P ;
+   }
+</script>
+</html>

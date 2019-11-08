@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+Enter your name: <input type="text" id="1" onfocusin="myFunction()" onblur="change()">
+
+<p>When the input field gets focus, a function is triggered which changes the background-color.</p>
+
+<script>
+function myFunction() {
+  document.getElementById("1").style.background = "skyblue";
+}
+function change()
+{
+  document.getElementById("1").style.background = "white";
+
+	}
+</script>
+
+</body>
+</html>
