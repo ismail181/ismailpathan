@@ -1,7 +1,6 @@
 //method overriding
 
 using System;
-
 public class Meth
 {
     public string name = "ismail";
@@ -9,9 +8,7 @@ public class Meth
     {
        Console.WriteLine("from method 1");
     }
-   
 }
-
 public class Meth1: Meth
 {
     public string name="pathan";
@@ -24,7 +21,6 @@ public class Meth1: Meth
            base.add();
        Console.WriteLine("from method 2");
     }
-   
 }
 
 public class Moverriding

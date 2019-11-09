@@ -1,7 +1,7 @@
 using System;  
 namespace AccessSpecifiers  
 {  
-   public class Private  
+   public class Program  
     {  
         private string name = "ismail ";  
         private void Msg(string msg)  
@@ -13,7 +13,7 @@ namespace AccessSpecifiers
     {  
        public static void Main(string[] args)  
         {  
-            private internalTest = new Internal();  
+            Program internalTest = new Internal();  
          
             Console.WriteLine("Hello " + internalTest.name);  
   
